@@ -1,5 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+
+// Call the element loader after the platform has been bootstrapped
+defineCustomElements(window);
 import App from './App';
 
 const container = document.getElementById('root');
